@@ -31,7 +31,7 @@ class ProfileScreen extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.calendar_today,
               color: Colors.black,
             ),
@@ -207,7 +207,7 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(
               height: 18,
             ),
-            Container(
+            SizedBox(
               height: 300,
               child: ListView.builder(
                 itemCount: listNames.length,

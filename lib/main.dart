@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-import 'layout_media_screen.dart';
+import 'landscape_mode.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitDown,
-    DeviceOrientation.portraitUp,
-  ]);
   runApp(const ShowImages());
 }
 
@@ -18,7 +12,7 @@ class ShowImages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: LayoutMediaScreen(),
+      home: LandScapeMode(),
     );
   }
 }
