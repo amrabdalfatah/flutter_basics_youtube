@@ -6,7 +6,7 @@ class LayoutMediaScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height; // 772
-    final screenWidth = MediaQuery.of(context).size.width; // 360
+    // final screenWidth = MediaQuery.of(context).size.width; // 360
     final appBar = AppBar(
       title: const Text('Hello'),
     );
